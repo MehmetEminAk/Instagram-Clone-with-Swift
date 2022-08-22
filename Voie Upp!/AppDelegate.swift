@@ -7,14 +7,44 @@
 
 import UIKit
 import CoreData
+import Parse
+
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    
+    
+    func rememberUser(){
+        let user : String? = UserDefaults.standard.string(forKey: "username")
+        if user != nil {
+            let board : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let tabBar = board.instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
+            window?.rootViewController = tabBar
+            
+            
+            
+        }
+    }
 
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "gZzMqRhx28Fvpa52PU7V9bNPEw942s1KC5EnYzsW"
+                    $0.clientKey = "5Jyci4NtFOdsdOhbM07hGvBQRszLv1XksY9s0Uho"
+                    $0.server = "https://parseapi.back4app.com/"
+                }
+                Parse.initialize(with: parseConfig)
+        let defaultACL = PFACL()
+        defaultACL.hasPublicReadAccess = true
+        defaultACL.hasPublicReadAccess = true
+        
+        rememberUser()
+        
         return true
     }
 

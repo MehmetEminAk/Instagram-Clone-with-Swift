@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27CC4BB949EC3328439AC68B /* Pods_Voie_Upp_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FAB9245BC75AC4844C5428 /* Pods_Voie_Upp_.framework */; };
 		D06C6D8328AF797000D148EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C6D8228AF797000D148EF /* AppDelegate.swift */; };
 		D06C6D8528AF797000D148EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C6D8428AF797000D148EF /* SceneDelegate.swift */; };
-		D06C6D8728AF797000D148EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C6D8628AF797000D148EF /* ViewController.swift */; };
 		D06C6D8A28AF797000D148EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06C6D8828AF797000D148EF /* Main.storyboard */; };
 		D06C6D8D28AF797000D148EF /* Voie_Upp_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D06C6D8B28AF797000D148EF /* Voie_Upp_.xcdatamodeld */; };
 		D06C6D8F28AF797300D148EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06C6D8E28AF797300D148EF /* Assets.xcassets */; };
 		D06C6D9228AF797300D148EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06C6D9028AF797300D148EF /* LaunchScreen.storyboard */; };
+		D0AF3CA728B3960900CEE857 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF3CA628B3960900CEE857 /* loginVC.swift */; };
+		D0AF3CAB28B3B14B00CEE857 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF3CAA28B3B14B00CEE857 /* signUpVC.swift */; };
+		D0AF3CAD28B3D0FB00CEE857 /* exploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF3CAC28B3D0FB00CEE857 /* exploreVC.swift */; };
+		D0B8C25328AFA92400C07C08 /* alertt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8C25228AFA92400C07C08 /* alertt.swift */; };
+		D0F791EA28B3EA8D00CC568C /* addImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F791E928B3EA8D00CC568C /* addImageVC.swift */; };
+		D0F791EC28B3FA9F00CC568C /* feedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F791EB28B3FA9F00CC568C /* feedTableViewCell.swift */; };
+		D0F791EE28B3FC2900CC568C /* feedVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F791ED28B3FC2900CC568C /* feedVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20FAB9245BC75AC4844C5428 /* Pods_Voie_Upp_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voie_Upp_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CE832DFE981F9333E220F6 /* Pods-Voie Upp!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voie Upp!.release.xcconfig"; path = "Target Support Files/Pods-Voie Upp!/Pods-Voie Upp!.release.xcconfig"; sourceTree = "<group>"; };
+		9F32CD7C97F9286066B75D40 /* Pods-Voie Upp!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voie Upp!.debug.xcconfig"; path = "Target Support Files/Pods-Voie Upp!/Pods-Voie Upp!.debug.xcconfig"; sourceTree = "<group>"; };
 		D06C6D7F28AF797000D148EF /* Voie Upp!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voie Upp!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06C6D8228AF797000D148EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D06C6D8428AF797000D148EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D06C6D8628AF797000D148EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D06C6D8928AF797000D148EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D06C6D8C28AF797000D148EF /* Voie_Upp_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Voie_Upp_.xcdatamodel; sourceTree = "<group>"; };
 		D06C6D8E28AF797300D148EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D06C6D9128AF797300D148EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D06C6D9328AF797300D148EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0AF3CA628B3960900CEE857 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		D0AF3CAA28B3B14B00CEE857 /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
+		D0AF3CAC28B3D0FB00CEE857 /* exploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exploreVC.swift; sourceTree = "<group>"; };
+		D0B8C25228AFA92400C07C08 /* alertt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertt.swift; sourceTree = "<group>"; };
+		D0F791E928B3EA8D00CC568C /* addImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addImageVC.swift; sourceTree = "<group>"; };
+		D0F791EB28B3FA9F00CC568C /* feedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedTableViewCell.swift; sourceTree = "<group>"; };
+		D0F791ED28B3FC2900CC568C /* feedVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CC4BB949EC3328439AC68B /* Pods_Voie_Upp_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B53281F694495F3275BB89C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20FAB9245BC75AC4844C5428 /* Pods_Voie_Upp_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D06C6D7628AF797000D148EF = {
 			isa = PBXGroup;
 			children = (
 				D06C6D8128AF797000D148EF /* Voie Upp! */,
 				D06C6D8028AF797000D148EF /* Products */,
+				ECAB2FE016488E52613AC61E /* Pods */,
+				B53281F694495F3275BB89C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +87,29 @@
 			children = (
 				D06C6D8228AF797000D148EF /* AppDelegate.swift */,
 				D06C6D8428AF797000D148EF /* SceneDelegate.swift */,
-				D06C6D8628AF797000D148EF /* ViewController.swift */,
 				D06C6D8828AF797000D148EF /* Main.storyboard */,
 				D06C6D8E28AF797300D148EF /* Assets.xcassets */,
 				D06C6D9028AF797300D148EF /* LaunchScreen.storyboard */,
 				D06C6D9328AF797300D148EF /* Info.plist */,
 				D06C6D8B28AF797000D148EF /* Voie_Upp_.xcdatamodeld */,
+				D0B8C25228AFA92400C07C08 /* alertt.swift */,
+				D0AF3CA628B3960900CEE857 /* loginVC.swift */,
+				D0AF3CAA28B3B14B00CEE857 /* signUpVC.swift */,
+				D0AF3CAC28B3D0FB00CEE857 /* exploreVC.swift */,
+				D0F791E928B3EA8D00CC568C /* addImageVC.swift */,
+				D0F791EB28B3FA9F00CC568C /* feedTableViewCell.swift */,
+				D0F791ED28B3FC2900CC568C /* feedVCViewController.swift */,
 			);
 			path = "Voie Upp!";
+			sourceTree = "<group>";
+		};
+		ECAB2FE016488E52613AC61E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F32CD7C97F9286066B75D40 /* Pods-Voie Upp!.debug.xcconfig */,
+				59CE832DFE981F9333E220F6 /* Pods-Voie Upp!.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D06C6D9628AF797300D148EF /* Build configuration list for PBXNativeTarget "Voie Upp!" */;
 			buildPhases = (
+				C8A5AE96F2BDA23C926E8E26 /* [CP] Check Pods Manifest.lock */,
 				D06C6D7B28AF797000D148EF /* Sources */,
 				D06C6D7C28AF797000D148EF /* Frameworks */,
 				D06C6D7D28AF797000D148EF /* Resources */,
+				AD33E7C246FD2DAA7BCEBDDD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,13 +180,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AD33E7C246FD2DAA7BCEBDDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Voie Upp!/Pods-Voie Upp!-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Voie Upp!/Pods-Voie Upp!-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Voie Upp!/Pods-Voie Upp!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A5AE96F2BDA23C926E8E26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Voie Upp!-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D06C6D7B28AF797000D148EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F791EC28B3FA9F00CC568C /* feedTableViewCell.swift in Sources */,
+				D0AF3CAD28B3D0FB00CEE857 /* exploreVC.swift in Sources */,
 				D06C6D8D28AF797000D148EF /* Voie_Upp_.xcdatamodeld in Sources */,
-				D06C6D8728AF797000D148EF /* ViewController.swift in Sources */,
+				D0AF3CA728B3960900CEE857 /* loginVC.swift in Sources */,
+				D0B8C25328AFA92400C07C08 /* alertt.swift in Sources */,
+				D0F791EE28B3FC2900CC568C /* feedVCViewController.swift in Sources */,
+				D0F791EA28B3EA8D00CC568C /* addImageVC.swift in Sources */,
+				D0AF3CAB28B3B14B00CEE857 /* signUpVC.swift in Sources */,
 				D06C6D8328AF797000D148EF /* AppDelegate.swift in Sources */,
 				D06C6D8528AF797000D148EF /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +378,7 @@
 		};
 		D06C6D9728AF797300D148EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F32CD7C97F9286066B75D40 /* Pods-Voie Upp!.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,11 +387,13 @@
 				DEVELOPMENT_TEAM = 56K423922J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Voie Upp!/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = we;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +409,7 @@
 		};
 		D06C6D9828AF797300D148EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59CE832DFE981F9333E220F6 /* Pods-Voie Upp!.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,11 +418,13 @@
 				DEVELOPMENT_TEAM = 56K423922J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Voie Upp!/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = we;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
