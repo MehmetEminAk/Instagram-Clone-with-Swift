@@ -12,6 +12,7 @@ class feedTableViewCell: UITableViewCell {
     @IBOutlet weak var usrNameLbl: UILabel!
     @IBOutlet weak var uuidLbl: UILabel!
     
+    @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var imgView: UIImageView!
     
     @IBAction func likeBtn(_ sender: Any) {
@@ -23,6 +24,7 @@ class feedTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.uuidLbl.isHidden = true
+        
         
     }
 

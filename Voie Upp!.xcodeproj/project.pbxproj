@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		27CC4BB949EC3328439AC68B /* Pods_Voie_Upp_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FAB9245BC75AC4844C5428 /* Pods_Voie_Upp_.framework */; };
+		D00A1DA828B4BC4F002DEFF6 /* exploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A1DA728B4BC4F002DEFF6 /* exploreVC.swift */; };
+		D00A1DAA28B4BC83002DEFF6 /* secondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A1DA928B4BC83002DEFF6 /* secondCell.swift */; };
 		D06C6D8328AF797000D148EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C6D8228AF797000D148EF /* AppDelegate.swift */; };
 		D06C6D8528AF797000D148EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06C6D8428AF797000D148EF /* SceneDelegate.swift */; };
 		D06C6D8A28AF797000D148EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06C6D8828AF797000D148EF /* Main.storyboard */; };
@@ -16,7 +18,6 @@
 		D06C6D9228AF797300D148EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06C6D9028AF797300D148EF /* LaunchScreen.storyboard */; };
 		D0AF3CA728B3960900CEE857 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF3CA628B3960900CEE857 /* loginVC.swift */; };
 		D0AF3CAB28B3B14B00CEE857 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF3CAA28B3B14B00CEE857 /* signUpVC.swift */; };
-		D0AF3CAD28B3D0FB00CEE857 /* exploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF3CAC28B3D0FB00CEE857 /* exploreVC.swift */; };
 		D0B8C25328AFA92400C07C08 /* alertt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B8C25228AFA92400C07C08 /* alertt.swift */; };
 		D0F791EA28B3EA8D00CC568C /* addImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F791E928B3EA8D00CC568C /* addImageVC.swift */; };
 		D0F791EC28B3FA9F00CC568C /* feedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F791EB28B3FA9F00CC568C /* feedTableViewCell.swift */; };
@@ -27,6 +28,8 @@
 		20FAB9245BC75AC4844C5428 /* Pods_Voie_Upp_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voie_Upp_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CE832DFE981F9333E220F6 /* Pods-Voie Upp!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voie Upp!.release.xcconfig"; path = "Target Support Files/Pods-Voie Upp!/Pods-Voie Upp!.release.xcconfig"; sourceTree = "<group>"; };
 		9F32CD7C97F9286066B75D40 /* Pods-Voie Upp!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voie Upp!.debug.xcconfig"; path = "Target Support Files/Pods-Voie Upp!/Pods-Voie Upp!.debug.xcconfig"; sourceTree = "<group>"; };
+		D00A1DA728B4BC4F002DEFF6 /* exploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exploreVC.swift; sourceTree = "<group>"; };
+		D00A1DA928B4BC83002DEFF6 /* secondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondCell.swift; sourceTree = "<group>"; };
 		D06C6D7F28AF797000D148EF /* Voie Upp!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voie Upp!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06C6D8228AF797000D148EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D06C6D8428AF797000D148EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +40,6 @@
 		D06C6D9328AF797300D148EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0AF3CA628B3960900CEE857 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		D0AF3CAA28B3B14B00CEE857 /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
-		D0AF3CAC28B3D0FB00CEE857 /* exploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exploreVC.swift; sourceTree = "<group>"; };
 		D0B8C25228AFA92400C07C08 /* alertt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertt.swift; sourceTree = "<group>"; };
 		D0F791E928B3EA8D00CC568C /* addImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addImageVC.swift; sourceTree = "<group>"; };
 		D0F791EB28B3FA9F00CC568C /* feedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,10 +97,11 @@
 				D0B8C25228AFA92400C07C08 /* alertt.swift */,
 				D0AF3CA628B3960900CEE857 /* loginVC.swift */,
 				D0AF3CAA28B3B14B00CEE857 /* signUpVC.swift */,
-				D0AF3CAC28B3D0FB00CEE857 /* exploreVC.swift */,
 				D0F791E928B3EA8D00CC568C /* addImageVC.swift */,
 				D0F791EB28B3FA9F00CC568C /* feedTableViewCell.swift */,
 				D0F791ED28B3FC2900CC568C /* feedVCViewController.swift */,
+				D00A1DA728B4BC4F002DEFF6 /* exploreVC.swift */,
+				D00A1DA928B4BC83002DEFF6 /* secondCell.swift */,
 			);
 			path = "Voie Upp!";
 			sourceTree = "<group>";
@@ -227,12 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00A1DA828B4BC4F002DEFF6 /* exploreVC.swift in Sources */,
 				D0F791EC28B3FA9F00CC568C /* feedTableViewCell.swift in Sources */,
-				D0AF3CAD28B3D0FB00CEE857 /* exploreVC.swift in Sources */,
 				D06C6D8D28AF797000D148EF /* Voie_Upp_.xcdatamodeld in Sources */,
 				D0AF3CA728B3960900CEE857 /* loginVC.swift in Sources */,
 				D0B8C25328AFA92400C07C08 /* alertt.swift in Sources */,
 				D0F791EE28B3FC2900CC568C /* feedVCViewController.swift in Sources */,
+				D00A1DAA28B4BC83002DEFF6 /* secondCell.swift in Sources */,
 				D0F791EA28B3EA8D00CC568C /* addImageVC.swift in Sources */,
 				D0AF3CAB28B3B14B00CEE857 /* signUpVC.swift in Sources */,
 				D06C6D8328AF797000D148EF /* AppDelegate.swift in Sources */,
