@@ -7,21 +7,30 @@
 
 import UIKit
 import Parse
+import StoreKit
 
 class feedVCViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
+    @IBOutlet weak var navigationBar: UINavigationBar!
     var postOwnerArray : [String]! = []
     var isWhat : Int = 0
     var postCommentArray : [String]! = []
     var postUUIDArray : [String]! = []
     var postImageArray : [PFFileObject]! = []
-    
-    func getData(){
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name(rawValue: "newPost"), object: nil)
+    }
+    @objc func getData(){
         let query = PFQuery(className: "Posts")
+        query.addDescendingOrder("createdAt")
         query.findObjectsInBackground { [self] objects, error in
             if error != nil {
                 let alert = returnAlert(errTitle: "ERROR!", errBody: error!.localizedDescription)
             }else{
                 if objects!.count > 0 {
+                    self.postImageArray.removeAll()
+                    self.postOwnerArray.removeAll()
+                    self.postCommentArray.removeAll()
+                    self.postUUIDArray.removeAll()
                     for object in objects! {
                         self.postCommentArray.append(object.object(forKey: "description") as! String)
                         self.postImageArray.append(object.object(forKey: "imgData") as! PFFileObject)
@@ -29,9 +38,11 @@ class feedVCViewController: UIViewController ,UITableViewDelegate,UITableViewDat
                        
                         
                         self.postOwnerArray.append(object.object(forKey: "postOwner") as! String)
+                        self.postUUIDArray.append(object.object(forKey: "imgId") as! String)
                         
                         
                     }
+                    
                 }
                
                 self.tableView.reloadData()
@@ -55,6 +66,8 @@ class feedVCViewController: UIViewController ,UITableViewDelegate,UITableViewDat
                 
             }
         }
+        cell.uuidLbl.text = self.postUUIDArray[indexPath.row]
+        
         
         cell.usrNameLbl.text = self.postOwnerArray![indexPath.row]
         
@@ -66,6 +79,18 @@ class feedVCViewController: UIViewController ,UITableViewDelegate,UITableViewDat
         return cell
         
     }
+    @objc func logOutFunction(){
+        let isSureOut = returnAlert(errTitle: "LOGOUT", errBody: "Are you sure to logout? If you are not press OK")
+        let yesSure = UIAlertAction(title: "YES", style: .default) { alert in
+            PFUser.logOut()
+            self.performSegue(withIdentifier: "logoutSegue", sender: nil)
+            
+        }
+        isSureOut.addAction(yesSure)
+        self.present(isSureOut, animated: true)
+        
+        
+    }
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -73,6 +98,7 @@ class feedVCViewController: UIViewController ,UITableViewDelegate,UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         getData()
+        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(title: "LOG OUT", style: .plain, target: self, action: #selector(logOutFunction))
 
         // Do any additional setup after loading the view.
     }

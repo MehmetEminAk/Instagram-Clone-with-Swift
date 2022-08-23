@@ -225,7 +225,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="b9q-oC-adf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="424" id="XIq-l5-nwj" customClass="feedTableViewCell" customModule="Voie_Upp_" customModuleProvider="target">
@@ -320,13 +320,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7uY-yA-B5j">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="GzX-zc-clO"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="756-el-kcx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -337,14 +330,15 @@
                             <constraint firstItem="b9q-oC-adf" firstAttribute="top" secondItem="756-el-kcx" secondAttribute="top" id="sLx-6E-Rvy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="yex-lR-n3b"/>
+                    <navigationItem key="navigationItem" id="oae-jr-Pwh"/>
                     <connections>
                         <outlet property="tableView" destination="b9q-oC-adf" id="j5P-8a-5T0"/>
+                        <segue destination="Kuj-Cv-zYl" kind="presentation" identifier="logoutSegue" modalPresentationStyle="fullScreen" id="ndn-Rd-2l8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bwp-EP-zVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847.826086956522" y="-482.14285714285711"/>
+            <point key="canvasLocation" x="2757.971014492754" y="-482.14285714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OFF-o2-Hmh">
@@ -357,7 +351,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vUs-Mb-vOS" kind="relationship" relationship="viewControllers" id="yk5-8H-WAw"/>
+                        <segue destination="ffH-of-ASM" kind="relationship" relationship="viewControllers" id="yk5-8H-WAw"/>
                         <segue destination="Ijj-RT-dzz" kind="relationship" relationship="viewControllers" id="qlp-7h-TPD"/>
                         <segue destination="Qhh-1w-ibN" kind="relationship" relationship="viewControllers" id="C5r-gQ-9by"/>
                     </connections>
@@ -468,10 +462,29 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="664.95535714285711"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qaa-Uy-imb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffH-of-ASM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="yex-lR-n3b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ds3-4i-PNg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vUs-Mb-vOS" kind="relationship" relationship="rootViewController" id="LRp-oa-zDS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3I9-fh-1Hb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847.826086956522" y="-482.14285714285711"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cmb-fo-dt2"/>
-        <segue reference="Ldt-kf-2eX"/>
+        <segue reference="ndn-Rd-2l8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="folder.badge.plus" catalog="system" width="128" height="91"/>

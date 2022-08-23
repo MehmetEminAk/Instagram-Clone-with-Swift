@@ -38,8 +38,9 @@ class addImageVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
         let data = self.chooseImg.image?.jpegData(compressionQuality: 0.5)
         let object = PFObject(className: "Posts")
         let imgData = PFFileObject(name: "\(UUID().uuidString) ", data: data!)
+    
         
-        
+        object["imgId"] = UUID().uuidString
         object["imgData"] = imgData
         object["description"] = commentTW.text
         object["postOwner"] = PFUser.current()?.username
@@ -52,6 +53,8 @@ class addImageVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
             }else{
                 self.chooseImg.image = .add
                 self.commentTW.text = "Açıklama girin"
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newPost") , object: nil)
+                
                 self.tabBarController?.selectedIndex = 0
                 
             }
